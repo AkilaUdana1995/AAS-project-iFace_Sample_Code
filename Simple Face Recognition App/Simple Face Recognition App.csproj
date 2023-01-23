@@ -148,6 +148,10 @@
     <Content Include="Haarcascadefiles\haarcascade_mcs_nose_Other_.xml" />
     <Content Include="Haarcascadefiles\haarcascade_righteye_2splits.xml" />
     <Content Include="Haarcascadefiles\haarcascade_upperbody.xml" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\iris.png" />
     <Content Include="Images\frames.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

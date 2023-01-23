@@ -62,6 +62,9 @@
             this.picScaleMid = new System.Windows.Forms.PictureBox();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnGabella = new System.Windows.Forms.Button();
+            this.DetectPupilIrisEyelidsButton = new System.Windows.Forms.Button();
+            this.btnEyeArea = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCapture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDetected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -409,11 +412,44 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "Distance between scaled two eyes";
             // 
+            // btnGabella
+            // 
+            this.btnGabella.Location = new System.Drawing.Point(1152, 745);
+            this.btnGabella.Name = "btnGabella";
+            this.btnGabella.Size = new System.Drawing.Size(99, 86);
+            this.btnGabella.TabIndex = 35;
+            this.btnGabella.Text = "Detect Gabella";
+            this.btnGabella.UseVisualStyleBackColor = true;
+            this.btnGabella.Click += new System.EventHandler(this.btnGabella_Click);
+            // 
+            // DetectPupilIrisEyelidsButton
+            // 
+            this.DetectPupilIrisEyelidsButton.Location = new System.Drawing.Point(1271, 745);
+            this.DetectPupilIrisEyelidsButton.Name = "DetectPupilIrisEyelidsButton";
+            this.DetectPupilIrisEyelidsButton.Size = new System.Drawing.Size(99, 86);
+            this.DetectPupilIrisEyelidsButton.TabIndex = 36;
+            this.DetectPupilIrisEyelidsButton.Text = "iris test(not completed)";
+            this.DetectPupilIrisEyelidsButton.UseVisualStyleBackColor = true;
+            this.DetectPupilIrisEyelidsButton.Click += new System.EventHandler(this.DetectPupilIrisEyelidsButton_Click);
+            // 
+            // btnEyeArea
+            // 
+            this.btnEyeArea.Location = new System.Drawing.Point(1152, 861);
+            this.btnEyeArea.Name = "btnEyeArea";
+            this.btnEyeArea.Size = new System.Drawing.Size(99, 76);
+            this.btnEyeArea.TabIndex = 37;
+            this.btnEyeArea.Text = "get eye area";
+            this.btnEyeArea.UseVisualStyleBackColor = true;
+            this.btnEyeArea.Click += new System.EventHandler(this.btnEyeArea_Click);
+            // 
             // btnScale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1436, 843);
+            this.ClientSize = new System.Drawing.Size(1520, 982);
+            this.Controls.Add(this.btnEyeArea);
+            this.Controls.Add(this.DetectPupilIrisEyelidsButton);
+            this.Controls.Add(this.btnGabella);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.picScaleMid);
@@ -500,6 +536,9 @@
         private System.Windows.Forms.PictureBox picScaleMid;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnGabella;
+        private System.Windows.Forms.Button DetectPupilIrisEyelidsButton;
+        private System.Windows.Forms.Button btnEyeArea;
     }
 }
 

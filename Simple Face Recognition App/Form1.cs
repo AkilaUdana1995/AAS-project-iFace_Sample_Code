@@ -23,6 +23,8 @@ using LineType = Emgu.CV.CvEnum.LineType;
 
 //using OpenCvSharp;
 //using OpenCvSharp.cpP;
+//using DlibDotNet;
+
 
 namespace Simple_Face_Recognition_App
 {
@@ -840,7 +842,85 @@ public partial class btnScale : Form
         {
 
         }
+
+
+        //test method to detect the gabella
+        //private Point DetectGlabella(Array2DBase image)
+        //{
+        //    // Load the pre-trained model for detecting facial feature points
+        //    var shapePredictor = new ShapePredictor(@"path/to/shape_predictor_68_face_landmarks.dat");
+
+        //    // Detect face and facial feature points
+        //    var face = shapePredictor.Detect(image);
+        //    var shape = shapePredictor.Detect(image, face);
+
+        //    // Find the point on the face that corresponds to the glabella
+        //    Point glabella = new Point();
+        //    if (shape.Parts > 0)
+        //    {
+        //        glabella = shape.GetPart((uint)Dlib.Dlib.NamedFaceLandmark.LEye);
+        //    }
+        //    return glabella;
+        //}
+        private void btnGabella_Click(object sender, EventArgs e)
+        {
+           // PointF glabella = DetectGlabella(loadedImage);
+           // textBox1.Text = glabella.ToString();
+        }
+
+        private void DetectPupilIrisEyelidsButton_Click(object sender, EventArgs e)
+        {
+            if (loadedImage == null)
+            {
+                MessageBox.Show("Please upload an image first.");
+            }
+            else
+            {
+                // Load the image into a Mat object
+                // Mat image = CvInvoke.Imread(@"C:\\GSIT2023 projects\\sample projects\\iFace\\2\\Simple-Face-Recognition-App-CS-master\\Simple-Face-Recognition-App-CS-master\\Simple Face Recognition App\\Images\\1.png", LoadImageType.Color);
+
+                Mat image = new Mat();
+                image = loadedImage.Mat;
+
+
+                // Convert the image to grayscale
+                CvInvoke.CvtColor(image, image, ColorConversion.Bgr2Gray);
+
+                // Detect the pupils in the image using Hough Circle Transform
+                CircleF[] pupils = CvInvoke.HoughCircles(image, HoughType.Gradient, 2.0, 20.0, 50, 100);
+                foreach (CircleF pupil in pupils)
+                {
+                    // Draw a circle around the detected pupil
+                    CvInvoke.Circle(image, Point.Round(pupil.Center), (int)pupil.Radius, new MCvScalar(0, 0, 255), 2);
+                }
+
+                // Detect the iris and eyelids in the image using a Haar Cascade classifier
+                using (CascadeClassifier irisEyelidClassifier = new CascadeClassifier("iris_eyelid_classifier.xml"))
+                {
+                    Rectangle[] irisEyelids = irisEyelidClassifier.DetectMultiScale(image, 1.2, 3, new Size(20, 20));
+                    foreach (Rectangle irisEyelid in irisEyelids)
+                    {
+                        // Draw a rectangle around the detected iris and eyelid
+                        CvInvoke.Rectangle(image, irisEyelid, new MCvScalar(0, 255, 0), 2);
+                    }
+                }
+
+                // Show the processed image in a picture box
+                //Bitmap bmp = iris.Bitmap;
+                //IrisPictureBox.Image = bmp;
+
+                picScaleMid.Image = image.Bitmap;
+            }
+        }
+
+        private void btnEyeArea_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
+
+
+   
 
 
 }
