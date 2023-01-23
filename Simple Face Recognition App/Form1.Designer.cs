@@ -405,9 +405,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(43, 314);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 16);
+            this.label4.Size = new System.Drawing.Size(214, 16);
             this.label4.TabIndex = 34;
-            this.label4.Text = "distance between scaled two eyes";
+            this.label4.Text = "Distance between scaled two eyes";
             // 
             // btnScale
             // 
