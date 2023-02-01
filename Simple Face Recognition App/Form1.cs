@@ -20,7 +20,12 @@ using ZedGraph;
 using System.Drawing.Drawing2D;
 using Emgu.CV.UI;
 using LineType = Emgu.CV.CvEnum.LineType;
+using Emgu.CV.Util;
 
+//using Emgu.CV.ImgCodecs;
+
+
+//using Emgu.CV.ImgCo
 //using OpenCvSharp;
 //using OpenCvSharp.cpP;
 //using DlibDotNet;
@@ -895,7 +900,9 @@ public partial class btnScale : Form
                 }
 
                 // Detect the iris and eyelids in the image using a Haar Cascade classifier
-                using (CascadeClassifier irisEyelidClassifier = new CascadeClassifier("iris_eyelid_classifier.xml"))
+                 using (CascadeClassifier irisEyelidClassifier = new CascadeClassifier(@"C:\GSIT2023 projects\sample projects\iFace\2\Simple-Face-Recognition-App-CS-master\Simple-Face-Recognition-App-CS-master\Simple Face Recognition App\Haarcascadefiles\Iris_eye_Sample.xml"))
+               // using (CascadeClassifier irisEyelidClassifier = new CascadeClassifier(@"C:\GSIT2023 projects\sample projects\iFace\2\Simple-Face-Recognition-App-CS-master\Simple-Face-Recognition-App-CS-master\Simple Face Recognition App\Haarcascadefiles\haarcascade_eye_iris__alt.xml"))
+
                 {
                     Rectangle[] irisEyelids = irisEyelidClassifier.DetectMultiScale(image, 1.2, 3, new Size(20, 20));
                     foreach (Rectangle irisEyelid in irisEyelids)
@@ -909,11 +916,59 @@ public partial class btnScale : Form
                 //Bitmap bmp = iris.Bitmap;
                 //IrisPictureBox.Image = bmp;
 
-                picScaleMid.Image = image.Bitmap;
+                picScale.Image = image.Bitmap;
             }
         }
 
+        //again detect the eye
         private void btnEyeArea_Click(object sender, EventArgs e)
+        {
+            // Load the image from the user
+           // loadedImage = new Image<Bgr, byte>(loadedImage);
+
+
+            Mat image = new Mat();
+            image = loadedImage.Mat;
+
+            // Convert the image to grayscale
+            Image<Gray, byte> grayImage = loadedImage.Convert<Gray, byte>();
+
+            // Perform noise reduction techniques to remove any unwanted noise in the image
+            grayImage = grayImage.SmoothGaussian(3);
+
+            // Perform edge detection to detect the iris boundaries
+            double cannyThreshold = 180.0;
+            double circleAccumulatorThreshold = 20;
+           // int irisy = 0;
+
+            CircleF[] circles = grayImage.HoughCircles(
+                new Gray(cannyThreshold),
+                new Gray(circleAccumulatorThreshold),
+               2.0, // Resolution of the accumulator used to detect centers of the circles
+                20.0, // Min distance
+                (int)118, // Min radius
+                (int)153 // Max radius
+                )[0]; // Get the circles from the first channel
+
+            CircleF iris = new CircleF();
+
+            foreach (CircleF circle in circles)
+            {
+                // Draw the iris boundaries on the image
+                loadedImage.Draw(circle, new Bgr(Color.Red), 2);
+                grayImage.ROI = new Rectangle();
+                grayImage.ROI = Rectangle.Empty;
+
+                // Set the region of interest for the iris
+                grayImage.ROI = new Rectangle(10, 30, grayImage.Width - 10, 55);
+                iris = circle;
+            }
+
+            // Display the image with the iris boundaries
+            picScale.Image = loadedImage.Bitmap;
+        }
+
+        private void temp_Click(object sender, EventArgs e)
         {
            
         }

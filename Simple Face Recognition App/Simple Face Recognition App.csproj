@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Haarcascadefiles\haarcascade_eye.xml" />
+    <Content Include="Haarcascadefiles\haarcascade_eye_iris__alt.xml" />
     <Content Include="Haarcascadefiles\haarcascade_eye_tree_eyeglasses.xml" />
     <Content Include="Haarcascadefiles\haarcascade_eye_tree_eyeglasses_default.xml" />
     <Content Include="Haarcascadefiles\haarcascade_frontalface_alt.xml">
@@ -148,6 +149,7 @@
     <Content Include="Haarcascadefiles\haarcascade_mcs_nose_Other_.xml" />
     <Content Include="Haarcascadefiles\haarcascade_righteye_2splits.xml" />
     <Content Include="Haarcascadefiles\haarcascade_upperbody.xml" />
+    <Content Include="Haarcascadefiles\Iris_eye_Sample.xml" />
     <Content Include="Images\1.png" />
     <Content Include="Images\3.png" />
     <Content Include="Images\4.png" />

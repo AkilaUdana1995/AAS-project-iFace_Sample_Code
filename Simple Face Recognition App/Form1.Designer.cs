@@ -65,6 +65,7 @@
             this.btnGabella = new System.Windows.Forms.Button();
             this.DetectPupilIrisEyelidsButton = new System.Windows.Forms.Button();
             this.btnEyeArea = new System.Windows.Forms.Button();
+            this.temp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCapture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDetected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,19 +78,17 @@
             // 
             // picCapture
             // 
-            this.picCapture.Location = new System.Drawing.Point(13, 414);
-            this.picCapture.Margin = new System.Windows.Forms.Padding(4);
+            this.picCapture.Location = new System.Drawing.Point(10, 336);
             this.picCapture.Name = "picCapture";
-            this.picCapture.Size = new System.Drawing.Size(242, 250);
+            this.picCapture.Size = new System.Drawing.Size(182, 203);
             this.picCapture.TabIndex = 0;
             this.picCapture.TabStop = false;
             // 
             // btnCapture
             // 
-            this.btnCapture.Location = new System.Drawing.Point(1077, 11);
-            this.btnCapture.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapture.Location = new System.Drawing.Point(808, 9);
             this.btnCapture.Name = "btnCapture";
-            this.btnCapture.Size = new System.Drawing.Size(164, 28);
+            this.btnCapture.Size = new System.Drawing.Size(123, 23);
             this.btnCapture.TabIndex = 1;
             this.btnCapture.Text = "1. Capture";
             this.btnCapture.UseVisualStyleBackColor = true;
@@ -97,10 +96,9 @@
             // 
             // btnDetectFaces
             // 
-            this.btnDetectFaces.Location = new System.Drawing.Point(1077, 48);
-            this.btnDetectFaces.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDetectFaces.Location = new System.Drawing.Point(808, 39);
             this.btnDetectFaces.Name = "btnDetectFaces";
-            this.btnDetectFaces.Size = new System.Drawing.Size(164, 28);
+            this.btnDetectFaces.Size = new System.Drawing.Size(123, 23);
             this.btnDetectFaces.TabIndex = 2;
             this.btnDetectFaces.Text = "2. Detect Faces";
             this.btnDetectFaces.UseVisualStyleBackColor = true;
@@ -108,18 +106,16 @@
             // 
             // txtPersonName
             // 
-            this.txtPersonName.Location = new System.Drawing.Point(1080, 279);
-            this.txtPersonName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPersonName.Location = new System.Drawing.Point(810, 227);
             this.txtPersonName.Name = "txtPersonName";
-            this.txtPersonName.Size = new System.Drawing.Size(161, 22);
+            this.txtPersonName.Size = new System.Drawing.Size(122, 20);
             this.txtPersonName.TabIndex = 3;
             // 
             // btnTrain
             // 
-            this.btnTrain.Location = new System.Drawing.Point(1077, 309);
-            this.btnTrain.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrain.Location = new System.Drawing.Point(808, 251);
             this.btnTrain.Name = "btnTrain";
-            this.btnTrain.Size = new System.Drawing.Size(163, 28);
+            this.btnTrain.Size = new System.Drawing.Size(122, 23);
             this.btnTrain.TabIndex = 5;
             this.btnTrain.Text = "4. Train Images";
             this.btnTrain.UseVisualStyleBackColor = true;
@@ -127,29 +123,26 @@
             // 
             // btnRecognize
             // 
-            this.btnRecognize.Location = new System.Drawing.Point(1077, 345);
-            this.btnRecognize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRecognize.Location = new System.Drawing.Point(808, 280);
             this.btnRecognize.Name = "btnRecognize";
-            this.btnRecognize.Size = new System.Drawing.Size(163, 28);
+            this.btnRecognize.Size = new System.Drawing.Size(122, 23);
             this.btnRecognize.TabIndex = 6;
             this.btnRecognize.Text = "5. Recognize Persons";
             this.btnRecognize.UseVisualStyleBackColor = true;
             // 
             // picDetected
             // 
-            this.picDetected.Location = new System.Drawing.Point(1077, 120);
-            this.picDetected.Margin = new System.Windows.Forms.Padding(4);
+            this.picDetected.Location = new System.Drawing.Point(808, 98);
             this.picDetected.Name = "picDetected";
-            this.picDetected.Size = new System.Drawing.Size(164, 151);
+            this.picDetected.Size = new System.Drawing.Size(123, 123);
             this.picDetected.TabIndex = 7;
             this.picDetected.TabStop = false;
             // 
             // btnAddPerson
             // 
-            this.btnAddPerson.Location = new System.Drawing.Point(1077, 84);
-            this.btnAddPerson.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddPerson.Location = new System.Drawing.Point(808, 68);
             this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.Size = new System.Drawing.Size(164, 28);
+            this.btnAddPerson.Size = new System.Drawing.Size(123, 23);
             this.btnAddPerson.TabIndex = 9;
             this.btnAddPerson.Text = "3. Add Person";
             this.btnAddPerson.UseVisualStyleBackColor = true;
@@ -157,30 +150,28 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1080, 381);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(810, 310);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(1170, 381);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(878, 310);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(71, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(53, 68);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
             // btnLoadImg
             // 
-            this.btnLoadImg.Location = new System.Drawing.Point(1248, 11);
-            this.btnLoadImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLoadImg.Location = new System.Drawing.Point(936, 9);
+            this.btnLoadImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLoadImg.Name = "btnLoadImg";
-            this.btnLoadImg.Size = new System.Drawing.Size(176, 28);
+            this.btnLoadImg.Size = new System.Drawing.Size(132, 23);
             this.btnLoadImg.TabIndex = 11;
             this.btnLoadImg.Text = "Load Image";
             this.btnLoadImg.UseVisualStyleBackColor = true;
@@ -188,10 +179,10 @@
             // 
             // btnDetectFaceFromIMG
             // 
-            this.btnDetectFaceFromIMG.Location = new System.Drawing.Point(1248, 48);
-            this.btnDetectFaceFromIMG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDetectFaceFromIMG.Location = new System.Drawing.Point(936, 39);
+            this.btnDetectFaceFromIMG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDetectFaceFromIMG.Name = "btnDetectFaceFromIMG";
-            this.btnDetectFaceFromIMG.Size = new System.Drawing.Size(175, 39);
+            this.btnDetectFaceFromIMG.Size = new System.Drawing.Size(131, 32);
             this.btnDetectFaceFromIMG.TabIndex = 12;
             this.btnDetectFaceFromIMG.Text = "Detect the face";
             this.btnDetectFaceFromIMG.UseVisualStyleBackColor = true;
@@ -199,10 +190,10 @@
             // 
             // btnNose
             // 
-            this.btnNose.Location = new System.Drawing.Point(1248, 99);
-            this.btnNose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNose.Location = new System.Drawing.Point(936, 80);
+            this.btnNose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNose.Name = "btnNose";
-            this.btnNose.Size = new System.Drawing.Size(175, 43);
+            this.btnNose.Size = new System.Drawing.Size(131, 35);
             this.btnNose.TabIndex = 13;
             this.btnNose.Text = "detect nose";
             this.btnNose.UseVisualStyleBackColor = true;
@@ -210,10 +201,10 @@
             // 
             // btnEye
             // 
-            this.btnEye.Location = new System.Drawing.Point(1249, 146);
-            this.btnEye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEye.Location = new System.Drawing.Point(937, 119);
+            this.btnEye.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEye.Name = "btnEye";
-            this.btnEye.Size = new System.Drawing.Size(175, 43);
+            this.btnEye.Size = new System.Drawing.Size(131, 35);
             this.btnEye.TabIndex = 14;
             this.btnEye.Text = "Capture Eyes";
             this.btnEye.UseVisualStyleBackColor = true;
@@ -221,10 +212,10 @@
             // 
             // btnRightEye
             // 
-            this.btnRightEye.Location = new System.Drawing.Point(1249, 207);
-            this.btnRightEye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRightEye.Location = new System.Drawing.Point(937, 168);
+            this.btnRightEye.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRightEye.Name = "btnRightEye";
-            this.btnRightEye.Size = new System.Drawing.Size(77, 70);
+            this.btnRightEye.Size = new System.Drawing.Size(58, 57);
             this.btnRightEye.TabIndex = 15;
             this.btnRightEye.Text = "Right Eye";
             this.btnRightEye.UseVisualStyleBackColor = true;
@@ -232,10 +223,10 @@
             // 
             // btnLeftEye
             // 
-            this.btnLeftEye.Location = new System.Drawing.Point(1346, 207);
-            this.btnLeftEye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLeftEye.Location = new System.Drawing.Point(1010, 168);
+            this.btnLeftEye.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLeftEye.Name = "btnLeftEye";
-            this.btnLeftEye.Size = new System.Drawing.Size(77, 70);
+            this.btnLeftEye.Size = new System.Drawing.Size(58, 57);
             this.btnLeftEye.TabIndex = 16;
             this.btnLeftEye.Text = "Left Eye";
             this.btnLeftEye.UseVisualStyleBackColor = true;
@@ -243,10 +234,9 @@
             // 
             // btnPupil
             // 
-            this.btnPupil.Location = new System.Drawing.Point(1254, 285);
-            this.btnPupil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPupil.Location = new System.Drawing.Point(940, 232);
             this.btnPupil.Name = "btnPupil";
-            this.btnPupil.Size = new System.Drawing.Size(169, 85);
+            this.btnPupil.Size = new System.Drawing.Size(127, 69);
             this.btnPupil.TabIndex = 17;
             this.btnPupil.Text = "Detect Iris";
             this.btnPupil.UseVisualStyleBackColor = true;
@@ -254,9 +244,10 @@
             // 
             // btnPutGlass
             // 
-            this.btnPutGlass.Location = new System.Drawing.Point(1254, 377);
+            this.btnPutGlass.Location = new System.Drawing.Point(940, 306);
+            this.btnPutGlass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPutGlass.Name = "btnPutGlass";
-            this.btnPutGlass.Size = new System.Drawing.Size(169, 120);
+            this.btnPutGlass.Size = new System.Drawing.Size(127, 98);
             this.btnPutGlass.TabIndex = 18;
             this.btnPutGlass.Text = "Try a Glass";
             this.btnPutGlass.UseVisualStyleBackColor = true;
@@ -264,18 +255,18 @@
             // 
             // picViewZoomed
             // 
-            this.picViewZoomed.Location = new System.Drawing.Point(858, 643);
-            this.picViewZoomed.Margin = new System.Windows.Forms.Padding(4);
+            this.picViewZoomed.Location = new System.Drawing.Point(644, 522);
             this.picViewZoomed.Name = "picViewZoomed";
-            this.picViewZoomed.Size = new System.Drawing.Size(238, 217);
+            this.picViewZoomed.Size = new System.Drawing.Size(178, 176);
             this.picViewZoomed.TabIndex = 19;
             this.picViewZoomed.TabStop = false;
             // 
             // btnZoomUpperBody
             // 
-            this.btnZoomUpperBody.Location = new System.Drawing.Point(1254, 503);
+            this.btnZoomUpperBody.Location = new System.Drawing.Point(940, 409);
+            this.btnZoomUpperBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnZoomUpperBody.Name = "btnZoomUpperBody";
-            this.btnZoomUpperBody.Size = new System.Drawing.Size(170, 61);
+            this.btnZoomUpperBody.Size = new System.Drawing.Size(128, 50);
             this.btnZoomUpperBody.TabIndex = 20;
             this.btnZoomUpperBody.Text = "zoom";
             this.btnZoomUpperBody.UseVisualStyleBackColor = true;
@@ -283,9 +274,10 @@
             // 
             // DetectEyebrows
             // 
-            this.DetectEyebrows.Location = new System.Drawing.Point(1254, 570);
+            this.DetectEyebrows.Location = new System.Drawing.Point(940, 463);
+            this.DetectEyebrows.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DetectEyebrows.Name = "DetectEyebrows";
-            this.DetectEyebrows.Size = new System.Drawing.Size(169, 50);
+            this.DetectEyebrows.Size = new System.Drawing.Size(127, 41);
             this.DetectEyebrows.TabIndex = 21;
             this.DetectEyebrows.Text = "Detect Eye brows";
             this.DetectEyebrows.UseVisualStyleBackColor = true;
@@ -293,9 +285,10 @@
             // 
             // btnDrawOutline
             // 
-            this.btnDrawOutline.Location = new System.Drawing.Point(1077, 472);
+            this.btnDrawOutline.Location = new System.Drawing.Point(808, 384);
+            this.btnDrawOutline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDrawOutline.Name = "btnDrawOutline";
-            this.btnDrawOutline.Size = new System.Drawing.Size(160, 67);
+            this.btnDrawOutline.Size = new System.Drawing.Size(120, 54);
             this.btnDrawOutline.TabIndex = 22;
             this.btnDrawOutline.Text = "draw outline";
             this.btnDrawOutline.UseVisualStyleBackColor = true;
@@ -303,9 +296,10 @@
             // 
             // btnIris
             // 
-            this.btnIris.Location = new System.Drawing.Point(1077, 545);
+            this.btnIris.Location = new System.Drawing.Point(808, 443);
+            this.btnIris.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIris.Name = "btnIris";
-            this.btnIris.Size = new System.Drawing.Size(160, 39);
+            this.btnIris.Size = new System.Drawing.Size(120, 32);
             this.btnIris.TabIndex = 23;
             this.btnIris.Text = "Detect Iris";
             this.btnIris.UseVisualStyleBackColor = true;
@@ -314,19 +308,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 394);
+            this.label1.Location = new System.Drawing.Point(9, 320);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 16);
+            this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 24;
             this.label1.Text = "your input";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // picScale
             // 
-            this.picScale.Location = new System.Drawing.Point(394, 21);
-            this.picScale.Margin = new System.Windows.Forms.Padding(4);
+            this.picScale.Location = new System.Drawing.Point(296, 1);
             this.picScale.Name = "picScale";
-            this.picScale.Size = new System.Drawing.Size(288, 280);
+            this.picScale.Size = new System.Drawing.Size(506, 246);
             this.picScale.TabIndex = 25;
             this.picScale.TabStop = false;
             this.picScale.Click += new System.EventHandler(this.picScale_Click);
@@ -334,26 +328,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 1);
+            this.label2.Location = new System.Drawing.Point(32, 1);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Scaled image";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(879, 623);
+            this.label3.Location = new System.Drawing.Point(659, 506);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 16);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 27;
             this.label3.Text = "Zoomed Image";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(971, 12);
+            this.button1.Location = new System.Drawing.Point(728, 262);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 48);
+            this.button1.Size = new System.Drawing.Size(74, 39);
             this.button1.TabIndex = 28;
             this.button1.Text = "Scale me";
             this.button1.UseVisualStyleBackColor = true;
@@ -361,9 +358,10 @@
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(1152, 665);
+            this.btnTest.Location = new System.Drawing.Point(864, 540);
+            this.btnTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(99, 73);
+            this.btnTest.Size = new System.Drawing.Size(74, 59);
             this.btnTest.TabIndex = 29;
             this.btnTest.Text = "test";
             this.btnTest.UseVisualStyleBackColor = true;
@@ -371,18 +369,18 @@
             // 
             // picScale1
             // 
-            this.picScale1.Location = new System.Drawing.Point(46, 21);
-            this.picScale1.Margin = new System.Windows.Forms.Padding(4);
+            this.picScale1.Location = new System.Drawing.Point(34, 17);
             this.picScale1.Name = "picScale1";
-            this.picScale1.Size = new System.Drawing.Size(288, 280);
+            this.picScale1.Size = new System.Drawing.Size(216, 228);
             this.picScale1.TabIndex = 30;
             this.picScale1.TabStop = false;
             // 
             // btnTest2
             // 
-            this.btnTest2.Location = new System.Drawing.Point(1271, 667);
+            this.btnTest2.Location = new System.Drawing.Point(953, 542);
+            this.btnTest2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTest2.Name = "btnTest2";
-            this.btnTest2.Size = new System.Drawing.Size(103, 68);
+            this.btnTest2.Size = new System.Drawing.Size(77, 55);
             this.btnTest2.TabIndex = 31;
             this.btnTest2.Text = "test 2";
             this.btnTest2.UseVisualStyleBackColor = true;
@@ -390,33 +388,37 @@
             // 
             // picScaleMid
             // 
-            this.picScaleMid.Location = new System.Drawing.Point(331, 21);
+            this.picScaleMid.Location = new System.Drawing.Point(248, 17);
+            this.picScaleMid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picScaleMid.Name = "picScaleMid";
-            this.picScaleMid.Size = new System.Drawing.Size(67, 280);
+            this.picScaleMid.Size = new System.Drawing.Size(50, 228);
             this.picScaleMid.TabIndex = 32;
             this.picScaleMid.TabStop = false;
             // 
             // txt1
             // 
-            this.txt1.Location = new System.Drawing.Point(290, 308);
+            this.txt1.Location = new System.Drawing.Point(218, 250);
+            this.txt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(264, 22);
+            this.txt1.Size = new System.Drawing.Size(199, 20);
             this.txt1.TabIndex = 33;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 314);
+            this.label4.Location = new System.Drawing.Point(32, 255);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(214, 16);
+            this.label4.Size = new System.Drawing.Size(172, 13);
             this.label4.TabIndex = 34;
             this.label4.Text = "Distance between scaled two eyes";
             // 
             // btnGabella
             // 
-            this.btnGabella.Location = new System.Drawing.Point(1152, 745);
+            this.btnGabella.Location = new System.Drawing.Point(864, 605);
+            this.btnGabella.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGabella.Name = "btnGabella";
-            this.btnGabella.Size = new System.Drawing.Size(99, 86);
+            this.btnGabella.Size = new System.Drawing.Size(74, 70);
             this.btnGabella.TabIndex = 35;
             this.btnGabella.Text = "Detect Gabella";
             this.btnGabella.UseVisualStyleBackColor = true;
@@ -424,9 +426,10 @@
             // 
             // DetectPupilIrisEyelidsButton
             // 
-            this.DetectPupilIrisEyelidsButton.Location = new System.Drawing.Point(1271, 745);
+            this.DetectPupilIrisEyelidsButton.Location = new System.Drawing.Point(953, 605);
+            this.DetectPupilIrisEyelidsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DetectPupilIrisEyelidsButton.Name = "DetectPupilIrisEyelidsButton";
-            this.DetectPupilIrisEyelidsButton.Size = new System.Drawing.Size(99, 86);
+            this.DetectPupilIrisEyelidsButton.Size = new System.Drawing.Size(74, 70);
             this.DetectPupilIrisEyelidsButton.TabIndex = 36;
             this.DetectPupilIrisEyelidsButton.Text = "iris test(not completed)";
             this.DetectPupilIrisEyelidsButton.UseVisualStyleBackColor = true;
@@ -434,19 +437,31 @@
             // 
             // btnEyeArea
             // 
-            this.btnEyeArea.Location = new System.Drawing.Point(1152, 861);
+            this.btnEyeArea.Location = new System.Drawing.Point(864, 700);
+            this.btnEyeArea.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEyeArea.Name = "btnEyeArea";
-            this.btnEyeArea.Size = new System.Drawing.Size(99, 76);
+            this.btnEyeArea.Size = new System.Drawing.Size(74, 62);
             this.btnEyeArea.TabIndex = 37;
             this.btnEyeArea.Text = "get eye area";
             this.btnEyeArea.UseVisualStyleBackColor = true;
             this.btnEyeArea.Click += new System.EventHandler(this.btnEyeArea_Click);
             // 
+            // temp
+            // 
+            this.temp.Location = new System.Drawing.Point(940, 700);
+            this.temp.Name = "temp";
+            this.temp.Size = new System.Drawing.Size(87, 62);
+            this.temp.TabIndex = 38;
+            this.temp.Text = "button2";
+            this.temp.UseVisualStyleBackColor = true;
+            this.temp.Click += new System.EventHandler(this.temp_Click);
+            // 
             // btnScale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1520, 982);
+            this.ClientSize = new System.Drawing.Size(1140, 798);
+            this.Controls.Add(this.temp);
             this.Controls.Add(this.btnEyeArea);
             this.Controls.Add(this.DetectPupilIrisEyelidsButton);
             this.Controls.Add(this.btnGabella);
@@ -484,7 +499,6 @@
             this.Controls.Add(this.btnDetectFaces);
             this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.picCapture);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "btnScale";
             this.Text = "Simple Face Recognition App";
             ((System.ComponentModel.ISupportInitialize)(this.picCapture)).EndInit();
@@ -539,6 +553,7 @@
         private System.Windows.Forms.Button btnGabella;
         private System.Windows.Forms.Button DetectPupilIrisEyelidsButton;
         private System.Windows.Forms.Button btnEyeArea;
+        private System.Windows.Forms.Button temp;
     }
 }
 
